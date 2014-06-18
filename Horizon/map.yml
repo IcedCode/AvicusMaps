@@ -1,0 +1,104 @@
+info:
+  title: 'Horizon'
+  world: 'Horizon'
+  version: '1.0'
+  type: 'ctm'
+  creators:
+  - 'subzero110'
+  - 'samthemance'
+  contributors:
+  - 'minermatt9090'
+  - 'the_good_1'
+  spawn: -49.5,98,76.5,-90,0
+teams:
+  red:
+    title: 'Red Team'
+    spawn: 1.5,58,-2.5,0,0 
+    monuments:
+      Left:
+        name: Left
+        location: 24,57,155
+      Right:
+        name: Right
+        location: -21,57,155
+  blue:
+    title: 'Blue Team'
+    spawn: 1.5,58,155,180,0
+    monuments:
+      Left:
+        name: Left
+        location: -21,57,-2
+      Right:
+        name: Right
+        location: 24,57,-2
+loadout:
+  helmet:
+    item: leather helmet
+  chestplate:
+    item: leather chestplate
+  leggings:
+    item: leather leggings
+  boots:
+    item: leather boots
+  0:
+    item: iron sword
+  1:
+    item: bow
+    enchants:
+    - arrow infinite:5
+  2:
+    item: diamond pickaxe
+    enchants:
+    - dig speed:1
+  3:
+    title: '&eGolden Apple'
+    item: golden apple
+    amount: 3
+  4:
+    item: glass
+    amount: 64
+  5:
+    item: log
+    amount: 64
+  6:
+    item: stone
+    amount: 64
+  7:
+    item: cooked beef
+    amount: 8
+  28:
+    item: arrow
+    amount: 1
+remove-drops:
+- leather helmet
+- leather chestplate
+- leather leggings
+- leather boots
+- log
+- glass
+- stone
+
+repair-drops:
+- stone sword
+- bow
+- diamond pickaxe
+
+regions:
+  red:
+    type: sphere
+    center: 1.5,58,-2.5
+    radius: 11
+    flags:
+      build:
+        who: '*'
+        message: '&cYou may not build in the spawn area.'
+  blue:
+    type: sphere
+    center:
+    radius: 11
+    flags: 1.5,58,155
+      build:
+        who: '*'
+        message: '&cYou may not build in the spawn area.'
+    
+

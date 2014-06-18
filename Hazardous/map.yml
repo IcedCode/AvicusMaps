@@ -1,0 +1,29 @@
+info:
+  title: 'Hazardous'
+  world: 'Hazardous'
+  version: '1.0'
+  type: 'Minatour'
+  creators:
+  - 'subzero110'
+  - 'ParaSpider'
+  - 'samthemenace'
+  time: 3000
+teams:
+  red:
+    title: Minotaur
+    max: 0
+    spawn: 25,99,-6,90,0
+  yellow:
+    title: Players
+    max: 15
+    spawn: 11,100,-6,90,0
+regions:
+  global:
+    type: global
+    flags:
+      fall_damage:
+        who: '*'
+  finish:
+    type: cuboid
+    min: -11,30,0
+    max: 0,27,-11

@@ -1,0 +1,77 @@
+info:
+  title: 'Arbaro'
+  world: 'Arbaro'
+  version: '1.0'
+  type: 'cth'
+  creators:
+  - 'samthemenace'
+  - 'subzero110'
+  spawn: 0.5,120,0.5,0,0
+  time: 3000
+  
+goal: hill
+  
+teams:
+  lime:
+    spawn: 54.5,64,0.5,90,0
+    title: Lime Team
+  blue:
+    spawn: 0.5,64,54.5,180,0
+    title: Blue Team
+  yellow:
+    spawn: -53.5,64,0.5,-90,0
+    title: Yellow Team
+  red:
+    spawn: -0.5,64,-53.5,0,0
+    title: Red Team
+	
+regions:
+  lime-spawn:
+    type: cuboid
+    min: -56,69,-3
+    max: -49,63,4
+    flags:
+      damage:
+        who: 'lime'
+      enter:
+        who: 'lime,yellow,red'
+        message: '&c!!!You may not enter lime's spawn!!!'
+  blue-spawn:
+    type: cuboid
+    min: -3,69,57
+    max: -4,63,50
+    flags:
+      damage:
+        who: 'blue'
+      enter:
+        who: 'lime,yellow,red'
+        message: '&c!!!You may not enter blue team's spawn!!!'
+  yellow-spawn:
+    type: cuboid
+    min: -56,69,-3
+    max: -49,63,4
+    flags:
+      damage:
+        who: 'yellow'
+      enter:
+        who: 'lime,blue,red'
+        message: '&c!!!You may not enter yellow team's spawn!!!'
+  red-spawn:
+    type: cuboid
+    min: 4,69,-56 
+    max: -3,63,-49
+    flags:
+      damage:
+        who: 'red'
+      enter:
+        who: 'pink,orange,blue'
+        message: '&cY!!!ou may not enter red team's spawn!!!'
+  hill:
+    type: cuboid
+    min: 3,75,-2
+    max: -2,79,3
+    flags:
+      fall_damage:
+        who: '*'
+
+hill: hill
